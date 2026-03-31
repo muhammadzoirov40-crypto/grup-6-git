@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | Catalyst Analytics</title>
+    <link rel="icon" type="image/svg+xml" href="./abubakrimage/favicon.svg">
+    <link rel="stylesheet" href="./src/output.css">
+    <style>
+        @media (prefers-reduced-motion: no-preference) {
+            .scroll-section {
+                opacity: 0;
+                transform: translateY(40px) scale(0.985);
+                filter: blur(10px);
+                transition:
+                    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+                    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+                    filter 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+                will-change: opacity, transform, filter;
+            }
+
+            .scroll-section.is-visible {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+                filter: blur(0);
+            }
+
+            .hover-lift,
+            .hover-lift-soft {
+                will-change: transform, box-shadow;
+                transition:
+                    transform 0.26s cubic-bezier(0.22, 1, 0.36, 1),
+                    box-shadow 0.26s cubic-bezier(0.22, 1, 0.36, 1),
+                    border-color 0.26s cubic-bezier(0.22, 1, 0.36, 1),
+                    background-color 0.26s cubic-bezier(0.22, 1, 0.36, 1);
+            }
+
+            .hover-lift:hover,
+            .hover-lift:focus-visible {
+                transform: translateY(-5px);
+                box-shadow: 0 20px 44px rgba(0, 0, 0, 0.3);
+            }
+
+            .hover-lift-soft:hover,
+            .hover-lift-soft:focus-visible {
+                transform: translateY(-3px);
+                box-shadow: 0 16px 34px rgba(0, 0, 0, 0.24);
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .scroll-section {
+                opacity: 1;
+                transform: none;
+                filter: none;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white [font-family:'Segoe_UI',Tahoma,sans-serif]">
+    <div class="mx-auto min-h-screen w-full max-w-[1240px] px-4 pb-16 pt-4 sm:px-5 lg:px-6">
+        <header class="flex items-center justify-between gap-5 border-b border-white/[0.06] pb-4">
+            <a href="#hero" aria-label="Catalyst Analytics home">
+                <img class="w-[118px] sm:w-[126px]" src="./abubakrimage/Logo.svg" alt="Catalyst Analytics logo">
+            </a>
+
+            <nav class="hidden items-center gap-5 text-[11px] text-white/65 md:flex lg:gap-6" aria-label="Primary">
+                <a class="transition hover:text-white" href="#hero">Home</a>
+                <a class="transition hover:text-white" href="#hero">Services</a>
+                <a class="transition hover:text-white" href="#hero">Portfolio</a>
+                <a class="transition hover:text-white" href="#hero">About Us</a>
+                <a class="transition hover:text-white" href="#hero">Careers</a>
+            </nav>
+
+            <a class="hover-lift inline-flex h-8 items-center justify-center rounded-[8px] bg-[#0A84FF] px-4 text-[11px] font-medium text-white transition hover:bg-[#0c76df] sm:h-9 sm:px-5" href="#hero">
+                Contact us
+            </a>
+        </header>
+
+        <main>
+            <section class="scroll-section pt-6" id="hero">
+                <div class="hover-lift overflow-hidden rounded-[24px] border border-white/[0.08] bg-[#111111] bg-[linear-gradient(90deg,rgba(8,8,8,0.72)_0%,rgba(8,8,8,0.34)_46%,rgba(8,8,8,0.10)_100%),url('../abubakrimage/hero.jpg')] bg-cover bg-center bg-no-repeat px-5 py-8 sm:px-7 sm:py-10 lg:min-h-[288px] lg:px-9 lg:py-11">
+                    <div class="max-w-[360px] pt-1">
+                        <h1 class="text-[26px] leading-[1.15] font-semibold tracking-[-0.03em] text-white sm:text-[32px] lg:text-[38px]">
+                            Build the Future with Us
+                        </h1>
+
+                        <p class="mt-3 max-w-[320px] text-[11px] leading-5 text-white/55 sm:text-[12px] sm:leading-[1.7]">
+                            Discover exciting career opportunities at Catalyst Analytics and join us in creating digital
+                            products that move businesses forward.
+                        </p>
+
+                        <a class="hover-lift mt-5 inline-flex h-9 items-center justify-center rounded-[7px] bg-[#0A84FF] px-4 text-[11px] font-medium text-white transition hover:bg-[#0c76df] sm:h-10 sm:px-5" href="#positions">
+                            Explore Opportunities
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mt-5 flex flex-col gap-3 rounded-[18px] bg-[#0A0A0A] p-3 sm:p-4 xl:flex-row xl:items-start">
+                    <details class="hover-lift-soft group rounded-[12px] border border-white/[0.06] bg-[#121212] xl:w-[170px] [&_summary::-webkit-details-marker]:hidden">
+                        <summary class="flex h-11 cursor-pointer list-none items-center justify-between px-4 text-left text-[11px] text-white/72">
+                            <span>Categories</span>
+                            <span class="text-white/45 transition group-open:rotate-180">
+                                <svg class="h-4 w-4" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                    <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </summary>
+                        <div class="space-y-2 border-t border-white/[0.06] px-3 py-3">
+                            <label class="block cursor-pointer">
+                                <input class="peer sr-only" type="radio" name="category" checked>
+                                <span class="flex h-8 items-center rounded-[8px] px-3 text-[11px] text-white/60 transition peer-checked:bg-[#0A84FF] peer-checked:text-white">All categories</span>
+                            </label>
+                            <label class="block cursor-pointer">
+                                <input class="peer sr-only" type="radio" name="category">
+                                <span class="flex h-8 items-center rounded-[8px] px-3 text-[11px] text-white/60 transition peer-checked:bg-[#0A84FF] peer-checked:text-white">Design</span>
+                            </label>
+                            <label class="block cursor-pointer">
+                                <input class="peer sr-only" type="radio" name="category">
+                                <span class="flex h-8 items-center rounded-[8px] px-3 text-[11px] text-white/60 transition peer-checked:bg-[#0A84FF] peer-checked:text-white">Development</span>
+                            </label>
+                            <label class="block cursor-pointer">
+                                <input class="peer sr-only" type="radio" name="category">
+                                <span class="flex h-8 items-center rounded-[8px] px-3 text-[11px] text-white/60 transition peer-checked:bg-[#0A84FF] peer-checked:text-white">Marketing</span>
+                            </label>
+                            <label class="block cursor-pointer">
+                                <input class="peer sr-only" type="radio" name="category">
+                                <span class="flex h-8 items-center rounded-[8px] px-3 text-[11px] text-white/60 transition peer-checked:bg-[#0A84FF] peer-checked:text-white">Management</span>
+                            </label>
+                        </div>
+                    </details>
+
+                    <details class="hover-lift-soft group rounded-[12px] border border-white/[0.06] bg-[#121212] xl:w-[170px] [&_summary::-webkit-details-marker]:hidden">
+                        <summary class="flex h-11 cursor-pointer list-none items-center justify-between px-4 text-left text-[11px] text-white/72">
+                            <span>Experience</span>
+                            <span class="text-white/45 transition group-open:rotate-180">
+                                <svg class="h-4 w-4" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                    <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </summary>
+                        <div class="space-y-2 border-t border-white/[0.06] px-3 py-3">
+                            <label class="block cursor-pointer">
+                                <input class="peer sr-only" type="radio" name="experience" checked>
+                                <span class="flex h-8 items-center rounded-[8px] px-3 text-[11px] text-white/60 transition peer-checked:bg-[#0A84FF] peer-checked:text-white">Any level</span>
+                            </label>
+                            <label class="block cursor-pointer">
+                                <input class="peer sr-only" type="radio" name="experience">
+                                <span class="flex h-8 items-center rounded-[8px] px-3 text-[11px] text-white/60 transition peer-checked:bg-[#0A84FF] peer-checked:text-white">Entry Level</span>
+                            </label>
+                            <label class="block cursor-pointer">
+                                <input class="peer sr-only" type="radio" name="experience">
+                                <span class="flex h-8 items-center rounded-[8px] px-3 text-[11px] text-white/60 transition peer-checked:bg-[#0A84FF] peer-checked:text-white">1-3 Years</span>
+                            </label>
+                            <label class="block cursor-pointer">
+                                <input class="peer sr-only" type="radio" name="experience">
+                                <span class="flex h-8 items-center rounded-[8px] px-3 text-[11px] text-white/60 transition peer-checked:bg-[#0A84FF] peer-checked:text-white">3-5 Years</span>
+                            </label>
+                            <label class="block cursor-pointer">
+                                <input class="peer sr-only" type="radio" name="experience">
+                                <span class="flex h-8 items-center rounded-[8px] px-3 text-[11px] text-white/60 transition peer-checked:bg-[#0A84FF] peer-checked:text-white">Senior Level</span>
+                            </label>
+                        </div>
+                    </details>
+
+                    <details class="hover-lift-soft group rounded-[12px] border border-white/[0.06] bg-[#121212] xl:w-[170px] [&_summary::-webkit-details-marker]:hidden">
+                        <summary class="flex h-11 cursor-pointer list-none items-center justify-between px-4 text-left text-[11px] text-white/72">
+                            <span>Job type</span>
+                            <span class="text-white/45 transition group-open:rotate-180">
+                                <svg class="h-4 w-4" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                    <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </summary>
+                        <div class="space-y-2 border-t border-white/[0.06] px-3 py-3">
+                            <label class="block cursor-pointer">
+                                <input class="peer sr-only" type="radio" name="job-type" checked>
+                                <span class="flex h-8 items-center rounded-[8px] px-3 text-[11px] text-white/60 transition peer-checked:bg-[#0A84FF] peer-checked:text-white">All types</span>
+                            </label>
+                            <label class="block cursor-pointer">
+                                <input class="peer sr-only" type="radio" name="job-type">
+                                <span class="flex h-8 items-center rounded-[8px] px-3 text-[11px] text-white/60 transition peer-checked:bg-[#0A84FF] peer-checked:text-white">Full Time</span>
+                            </label>
+                            <label class="block cursor-pointer">
+                                <input class="peer sr-only" type="radio" name="job-type">
+                                <span class="flex h-8 items-center rounded-[8px] px-3 text-[11px] text-white/60 transition peer-checked:bg-[#0A84FF] peer-checked:text-white">Part Time</span>
+                            </label>
+                            <label class="block cursor-pointer">
+                                <input class="peer sr-only" type="radio" name="job-type">
+                                <span class="flex h-8 items-center rounded-[8px] px-3 text-[11px] text-white/60 transition peer-checked:bg-[#0A84FF] peer-checked:text-white">Contract</span>
+                            </label>
+                            <label class="block cursor-pointer">
+                                <input class="peer sr-only" type="radio" name="job-type">
+                                <span class="flex h-8 items-center rounded-[8px] px-3 text-[11px] text-white/60 transition peer-checked:bg-[#0A84FF] peer-checked:text-white">Internship</span>
+                            </label>
+                        </div>
+                    </details>
+
+                    <details class="hover-lift-soft group rounded-[12px] border border-white/[0.06] bg-[#121212] xl:w-[170px] [&_summary::-webkit-details-marker]:hidden">
+                        <summary class="flex h-11 cursor-pointer list-none items-center justify-between px-4 text-left text-[11px] text-white/72">
+                            <span>Workplace type</span>
+                            <span class="text-white/45 transition group-open:rotate-180">
+                                <svg class="h-4 w-4" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                                    <path d="M5 8L10 13L15 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </summary>
+                        <div class="space-y-2 border-t border-white/[0.06] px-3 py-3">
+                            <label class="block cursor-pointer">
+                                <input class="peer sr-only" type="radio" name="workplace" checked>
+                                <span class="flex h-8 items-center rounded-[8px] px-3 text-[11px] text-white/60 transition peer-checked:bg-[#0A84FF] peer-checked:text-white">Anywhere</span>
+                            </label>
+                            <label class="block cursor-pointer">
+                                <input class="peer sr-only" type="radio" name="workplace">
+                                <span class="flex h-8 items-center rounded-[8px] px-3 text-[11px] text-white/60 transition peer-checked:bg-[#0A84FF] peer-checked:text-white">Remote</span>
+                            </label>
+                            <label class="block cursor-pointer">
+                                <input class="peer sr-only" type="radio" name="workplace">
+                                <span class="flex h-8 items-center rounded-[8px] px-3 text-[11px] text-white/60 transition peer-checked:bg-[#0A84FF] peer-checked:text-white">Hybrid</span>
+                            </label>
+                            <label class="block cursor-pointer">
+                                <input class="peer sr-only" type="radio" name="workplace">
+                                <span class="flex h-8 items-center rounded-[8px] px-3 text-[11px] text-white/60 transition peer-checked:bg-[#0A84FF] peer-checked:text-white">On-site</span>
+                            </label>
+                            <label class="block cursor-pointer">
+                                <input class="peer sr-only" type="radio" name="workplace">
+                                <span class="flex h-8 items-center rounded-[8px] px-3 text-[11px] text-white/60 transition peer-checked:bg-[#0A84FF] peer-checked:text-white">Flexible</span>
+                            </label>
+                        </div>
+                    </details>
+
+                    <div class="hover-lift-soft flex h-11 min-w-0 items-center rounded-[12px] border border-white/[0.06] bg-[#121212] pl-4 pr-1 xl:flex-1">
+                        <input class="h-full min-w-0 flex-1 bg-transparent text-[11px] text-white outline-none placeholder:text-white/30" type="text" placeholder="Search by Position..." aria-label="Search by position">
+                        <button class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-[#0A84FF]" type="button" aria-label="Search">
+                            <img class="h-[18px] w-[18px]" src="./abubakrimage/search.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="scroll-section pt-12 sm:pt-14" id="positions">
+                <h2 class="text-center text-[26px] font-semibold tracking-[-0.03em] text-white sm:text-[30px]">
+                    Open Positions
+                </h2>
+
+                <div class="mt-8 grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-5">
+                    <article class="hover-lift rounded-[16px] border border-white/[0.08] bg-[#121212] p-5 sm:p-6">
+                        <div class="flex items-center gap-3">
+                            <img class="h-[46px] w-[46px] shrink-0 sm:h-[52px] sm:w-[52px]" src="./abubakrimage/Icon Container.svg" alt="">
+                            <h3 class="text-[18px] font-medium tracking-[-0.02em] text-white">WEB DESIGNER</h3>
+                        </div>
+
+                        <div class="mt-5 flex flex-wrap gap-x-8 gap-y-3 text-[11px] text-white/46">
+                            <p>Salary : <span class="text-white/72">$40,000 - $60,000 per year</span></p>
+                            <p>Experience : <span class="text-white/72">1-2 year</span></p>
+                            <p>Deadline : <span class="text-white/72">30/09/2025</span></p>
+                        </div>
+
+                        <div class="mt-6">
+                            <p class="text-[13px] font-semibold tracking-[0.08em] text-white">SKILLS</p>
+                            <p class="mt-3 text-[11px] leading-5 text-white/48">
+                                Proficiency in Adobe Creative Suite, Figma/Sketch, Bootstrap, HTML,
+                                strong understanding of UX/UI design principles, responsive design.
+                            </p>
+                        </div>
+
+                        <a class="hover-lift mt-7 inline-flex h-10 w-full items-center justify-center rounded-[7px] bg-[#0A84FF] text-[11px] font-medium text-white transition hover:bg-[#0c76df]" href="#hero">
+                            Apply Now
+                        </a>
+                    </article>
+
+                    <article class="hover-lift rounded-[16px] border border-white/[0.08] bg-[#121212] p-5 sm:p-6">
+                        <div class="flex items-center gap-3">
+                            <img class="h-[46px] w-[46px] shrink-0 sm:h-[52px] sm:w-[52px]" src="./abubakrimage/Icon Container-1.svg" alt="">
+                            <h3 class="text-[18px] font-medium tracking-[-0.02em] text-white">MOBILE APP DEVELOPER</h3>
+                        </div>
+
+                        <div class="mt-5 flex flex-wrap gap-x-8 gap-y-3 text-[11px] text-white/46">
+                            <p>Salary : <span class="text-white/72">$55,000 - $75,000 per year</span></p>
+                            <p>Experience : <span class="text-white/72">2+ years</span></p>
+                            <p>Deadline : <span class="text-white/72">15/10/2025</span></p>
+                        </div>
+
+                        <div class="mt-6">
+                            <p class="text-[13px] font-semibold tracking-[0.08em] text-white">SKILLS</p>
+                            <p class="mt-3 text-[11px] leading-5 text-white/48">
+                                Proficiency in iOS or Android development, React Native, knowledge of
+                                mobile app design patterns, experience with mobile testing and debugging.
+                            </p>
+                        </div>
+
+                        <a class="hover-lift mt-7 inline-flex h-10 w-full items-center justify-center rounded-[7px] bg-[#0A84FF] text-[11px] font-medium text-white transition hover:bg-[#0c76df]" href="#hero">
+                            Apply Now
+                        </a>
+                    </article>
+
+                    <article class="hover-lift rounded-[16px] border border-white/[0.08] bg-[#121212] p-5 sm:p-6">
+                        <div class="flex items-center gap-3">
+                            <img class="h-[46px] w-[46px] shrink-0 sm:h-[52px] sm:w-[52px]" src="./abubakrimage/Icon Container-2.svg" alt="">
+                            <h3 class="text-[18px] font-medium tracking-[-0.02em] text-white">DIGITAL MARKETING SPECIALIST</h3>
+                        </div>
+
+                        <div class="mt-5 flex flex-wrap gap-x-8 gap-y-3 text-[11px] text-white/46">
+                            <p>Salary : <span class="text-white/72">$50,000 - $65,000 per year</span></p>
+                            <p>Experience : <span class="text-white/72">1+ year</span></p>
+                            <p>Deadline : <span class="text-white/72">20/11/2025</span></p>
+                        </div>
+
+                        <div class="mt-6">
+                            <p class="text-[13px] font-semibold tracking-[0.08em] text-white">SKILLS</p>
+                            <p class="mt-3 text-[11px] leading-5 text-white/48">
+                                Proficiency in SEO, SEM, analytical tools like Google Analytics,
+                                content marketing expertise, campaign management and reporting.
+                            </p>
+                        </div>
+
+                        <a class="hover-lift mt-7 inline-flex h-10 w-full items-center justify-center rounded-[7px] bg-[#0A84FF] text-[11px] font-medium text-white transition hover:bg-[#0c76df]" href="#hero">
+                            Apply Now
+                        </a>
+                    </article>
+
+                    <article class="hover-lift rounded-[16px] border border-white/[0.08] bg-[#121212] p-5 sm:p-6">
+                        <div class="flex items-center gap-3">
+                            <img class="h-[46px] w-[46px] shrink-0 sm:h-[52px] sm:w-[52px]" src="./abubakrimage/Icon Container-3.svg" alt="">
+                            <h3 class="text-[18px] font-medium tracking-[-0.02em] text-white">PROJECT MANAGER</h3>
+                        </div>
+
+                        <div class="mt-5 flex flex-wrap gap-x-8 gap-y-3 text-[11px] text-white/46">
+                            <p>Salary : <span class="text-white/72">$60,000 - $85,000 per year</span></p>
+                            <p>Experience : <span class="text-white/72">4+ years</span></p>
+                            <p>Deadline : <span class="text-white/72">10/12/2025</span></p>
+                        </div>
+
+                        <div class="mt-6">
+                            <p class="text-[13px] font-semibold tracking-[0.08em] text-white">SKILLS</p>
+                            <p class="mt-3 text-[11px] leading-5 text-white/48">
+                                Strong project management communication skills, ability to manage teams,
+                                project planning and execution, experience in Agile project management.
+                            </p>
+                        </div>
+
+                        <a class="hover-lift mt-7 inline-flex h-10 w-full items-center justify-center rounded-[7px] bg-[#0A84FF] text-[11px] font-medium text-white transition hover:bg-[#0c76df]" href="#hero">
+                            Apply Now
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="scroll-section pt-12 sm:pt-14" id="contact-cta">
+                <div class="hover-lift mx-auto max-w-[980px] overflow-hidden rounded-[64px] border border-white/[0.08] bg-[#111111] bg-[url('../abubakrimage/discustingBg.png')] bg-cover bg-center bg-no-repeat px-6 py-10 text-center sm:px-10 sm:py-12">
+                    <h2 class="text-[27px] font-semibold tracking-[-0.03em] text-white sm:text-[31px]">
+                        READY TO DISCUSS
+                    </h2>
+
+                    <p class="mx-auto mt-3 max-w-[420px] text-[12px] leading-6 text-white/60 sm:text-[13px]">
+                        Have Problems? Reserve Your Free Consultation with our Expert!
+                    </p>
+
+                    <a class="hover-lift mx-auto mt-6 inline-flex h-10 min-w-[138px] items-center justify-center rounded-[7px] bg-[#0A84FF] px-5 text-[11px] font-medium text-white transition hover:bg-[#0c76df]" href="#hero">
+                        Sign up Now
+                    </a>
+                </div>
+            </section>
+
+            <footer class="scroll-section mt-12 border-t border-white/[0.08] pt-8 sm:mt-14 sm:pt-10">
+                <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+                    <a href="#hero" aria-label="Catalyst Analytics home">
+                        <img class="w-[118px] sm:w-[126px]" src="./abubakrimage/Logo.svg" alt="Catalyst Analytics logo">
+                    </a>
+
+                    <nav class="flex flex-wrap items-center gap-x-5 gap-y-3 text-[11px] text-white/60 lg:justify-center">
+                        <a class="transition hover:text-white" href="#hero">Home</a>
+                        <a class="transition hover:text-white" href="#hero">Services</a>
+                        <a class="transition hover:text-white" href="#hero">Portfolio</a>
+                        <a class="transition hover:text-white" href="#hero">About Us</a>
+                        <a class="transition hover:text-white" href="#hero">Careers</a>
+                    </nav>
+
+                    <div class="flex items-center gap-3">
+                        <a class="hover-lift-soft inline-flex h-10 w-10 items-center justify-center" href="#" aria-label="Facebook">
+                            <img class="h-10 w-10" src="./abubakrimage/Button.svg" alt="">
+                        </a>
+                        <a class="hover-lift-soft inline-flex h-10 w-10 items-center justify-center" href="#" aria-label="Twitter">
+                            <img class="h-10 w-10" src="./abubakrimage/Button-1.svg" alt="">
+                        </a>
+                        <a class="hover-lift-soft inline-flex h-10 w-10 items-center justify-center" href="#" aria-label="LinkedIn">
+                            <img class="h-10 w-10" src="./abubakrimage/Button-2.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mt-7 flex flex-col gap-4 border-t border-white/[0.06] pt-5 text-[11px] text-white/42 lg:flex-row lg:items-center lg:justify-between">
+                    <div class="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-6">
+                        <span class="inline-flex items-center gap-2">
+                            <span class="h-2 w-2 rounded-full bg-[#0A84FF]"></span>
+                            contact@catalystanalytics.io
+                        </span>
+                        <span class="inline-flex items-center gap-2">
+                            <span class="h-2 w-2 rounded-full bg-[#0A84FF]"></span>
+                            +1 (480) 555-0145
+                        </span>
+                        <span class="inline-flex items-center gap-2">
+                            <span class="h-2 w-2 rounded-full bg-[#0A84FF]"></span>
+                            425 Market St, Suite 402, San Francisco, CA 94105
+                        </span>
+                    </div>
+
+                    <div class="flex items-center gap-4 text-white/38">
+                        <a class="transition hover:text-white/70" href="#">Privacy Policy</a>
+                        <a class="transition hover:text-white/70" href="#">Terms of Service</a>
+                    </div>
+                </div>
+
+                <p class="mt-5 pb-2 text-center text-[10px] text-white/26">
+                    Copyright 2025 Catalyst Analytics. All rights reserved.
+                </p>
+            </footer>
+
+        </main>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = Array.from(document.querySelectorAll('.scroll-section'));
+            const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+            if (reduceMotion || sections.length === 0) {
+                sections.forEach((section) => section.classList.add('is-visible'));
+                return;
+            }
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    } else {
+                        entry.target.classList.remove('is-visible');
+                    }
+                });
+            }, {
+                threshold: 0.22,
+                rootMargin: '0px 0px -12% 0px'
+            });
+
+            sections.forEach((section, index) => {
+                section.style.transitionDelay = `${Math.min(index * 90, 240)}ms`;
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+
+</html>
